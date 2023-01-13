@@ -192,7 +192,7 @@ section .title::after {
 }
 
 .scroll-up-btn:hover {
-    filter: brightness(90%);
+    filter: brightness(50%);
 }
 
 
