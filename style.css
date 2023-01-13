@@ -331,11 +331,12 @@ section .title::after {
 }
 
 .services .serv-content .card {
-    width: calc(33% - 20px);
+    width: 20px;
+    
     background: #222;
     text-align: center;
     border-radius: 6px;
-    padding: 50px 25px;
+    padding: 20px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -444,19 +445,19 @@ section .title::after {
 }
 
 .skills-content .right .css::before {
-    width: 60%;
-}
-
-.skills-content .right .js::before {
     width: 40%;
 }
 
+.skills-content .right .js::before {
+    width: 30%;
+}
+
 .skills-content .right .php::before {
-    width: 50%;
+    width: 30%;
 }
 
 .skills-content .right .mysql::before {
-    width: 70%;
+    width: 30%;
 }
 
 
