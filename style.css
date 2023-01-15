@@ -440,26 +440,33 @@ section .title::after {
     background: crimson;
 }
 
-.skills-content .right .html::before {
+.skills-content .right .dart::before {
     width: 90%;
 }
 
-.skills-content .right .css::before {
-    width: 40%;
+.skills-content .right .php::before {
+    width: 65%;
+
+}
+
+.skills-content .right .sql::before {
+    width: 55%;
+
 }
 
 .skills-content .right .js::before {
-    width: 30%;
+    width: 40%;
 }
 
-.skills-content .right .php::before {
-    width: 30%;
+
+
+.skills-content .right .html::before {
+    width: 40%;
 }
 
-.skills-content .right .mysql::before {
+.skills-content .right .css::before {
     width: 30%;
 }
-
 
 /* teams section styling */
 
