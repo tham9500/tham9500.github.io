@@ -47,6 +47,8 @@ $(document).ready(function () {
     loop: true,
   });
 
+  
+
   var typed = new Typed(".typing-2", {
     strings: [
       "Software Developer",
