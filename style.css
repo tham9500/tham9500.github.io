@@ -463,7 +463,7 @@ section .title::after {
 }
 
 .teams .carousel .card {
-  /* height: 400px; */
+  height: 400px;
   background: #222;
   border-radius: 6px;
   padding: 25px 35px;
@@ -477,16 +477,15 @@ section .title::after {
 }
 
 .teams .carousel .card .box {
-  height: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: top;
+  justify-content: center;
   transition: all 0.3s ease;
 }
 
 .teams .carousel .card:hover .box {
-  height: 300px;
+  transform: scale(1.05);
 }
 
 .teams .carousel .card .text {
@@ -692,7 +691,7 @@ footer span a:hover {
   }
   .navbar .menu {
     position: fixed;
-    height: 100px;
+    height: 100vh;
     width: 100%;
     left: -100%;
     top: 0;
