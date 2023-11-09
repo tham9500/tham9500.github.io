@@ -477,6 +477,7 @@ section .title::after {
 }
 
 .teams .carousel .card .box {
+  height: 300;
   display: flex;
   flex-direction: column;
   align-items: center;
