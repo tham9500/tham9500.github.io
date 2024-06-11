@@ -36,8 +36,8 @@ $(document).ready(function () {
   // typing text animation script
   var typed = new Typed(".typing", {
     strings: [
-      "Software Developer",
-      "Engineering Computer",
+      "Software Engineer",
+      "Computer Engineer",
       "Flutter Developer",
       "System Analysis",
       "Craduated RMUTT",
@@ -51,8 +51,8 @@ $(document).ready(function () {
 
   var typed = new Typed(".typing-2", {
     strings: [
-      "Software Developer",
-      "Engineering Computer",
+      "Software Engineer",
+      "Computer Engineer",
       "Flutter Developer",
       "System Analysis",
       "Craduated RMUTT",
