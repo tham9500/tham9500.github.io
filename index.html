@@ -4,14 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
+    <title>Tham Saleerueng — Software Engineer</title>
+    <meta name="description" content="Tham Saleerueng — Software Engineer & Flutter Developer. Building fleet, healthcare and delivery apps used in production.">
+    <link rel="canonical" href="https://tham9500.github.io/">
+
+    <!-- favicon (inline SVG, initials) -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236366f1'/%3E%3Cstop offset='0.5' stop-color='%238b5cf6'/%3E%3Cstop offset='1' stop-color='%23ec4899'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-family='Arial,sans-serif' font-size='56' font-weight='700' fill='white' text-anchor='middle'%3ET%3C/text%3E%3C/svg%3E">
+
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tham9500.github.io/">
+    <meta property="og:title" content="Tham Saleerueng — Software Engineer">
+    <meta property="og:description" content="Software Engineer & Flutter Developer. Building fleet, healthcare and delivery apps used in production.">
+    <meta property="og:image" content="https://tham9500.github.io/images/profile-new.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tham Saleerueng — Software Engineer">
+    <meta name="twitter:description" content="Software Engineer & Flutter Developer. Building fleet, healthcare and delivery apps used in production.">
+    <meta name="twitter:image" content="https://tham9500.github.io/images/profile-new.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha384-t1nt8BQoYMLFN5p42tRAtuAAFQaCQODekUVeKKZrEnEyp4H2R0RHFz0KWpmj7i8g" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha384-kcNNzf7wI8//ZkNUaDd5JwxLoFaBgkj9Z4O4NwtuX9Lkmsz0HoITOxJsGkYxDuyG" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+        integrity="sha384-rgsT4FYZdXZfWuuDUh3PpG09BhGWXRr76/rvHul8JR9phRu9QnHlrsahNGWQ5Mzi" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha384-l/y5WJTphApmSlx76Ev6k4G3zxu/+19CVvn9OTKI7gs4Yu5Hm8mjpdtdr5oyhnNo" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="scroll-up-btn">
@@ -19,258 +43,439 @@
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <div class="logo"><a href="#">Tham<span>.</span></a></div>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">Profile</a></li>
-                <li><a href="#services" class="menu-btn">Educational</a></li>
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#education" class="menu-btn">Education</a></li>
+                <li><a href="#services" class="menu-btn">What I Do</a></li>
+                <li><a href="#skills" class="menu-btn">Experience</a></li>
+                <li><a href="#projects" class="menu-btn">Projects</a></li>
                 <li><a href="#teams" class="menu-btn">Activity</a></li>
-
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
+
     <!-- home section start -->
     <section class="home" id="home">
+        <div class="hero-bg"></div>
         <div class="max-width">
-            <div class="home-content">
+            <div class="home-content reveal">
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Tham Saleerueng</div>
                 <div class="text-3">And I'm <span class="typing"></span></div>
-                <!-- <a href="#">Hire me</a> -->
+                <p class="hero-sub">Computer Engineer turning ideas into production-grade mobile &amp; web applications — fleet, healthcare and delivery systems used by real businesses.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="https://drive.google.com/file/d/1vXzqMaH1bTd5NzEN9vUZ5QQdXr8KkVMt/view?usp=share_link" class="btn btn-ghost">Download CV</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/tham9500" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:tham.sal@freewillfx.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
         </div>
+        <a href="#about" class="scroll-hint" aria-label="Scroll down"><i class="fas fa-chevron-down"></i></a>
     </section>
+
     <!-- about section start -->
     <section class="about" id="about">
         <div class="max-width">
-            <h2 class="title">This is me</h2>
+            <h2 class="title">About me</h2>
             <div class="about-content">
-                <div class="column left">
-                    <img class="responsive" src="images/profile-1.jpeg" alt="">
+                <div class="column left reveal">
+                    <div class="photo-frame">
+                        <img class="responsive" src="images/profile-new.jpg" alt="Tham Saleerueng" width="340" height="453" loading="lazy" decoding="async">
+                    </div>
                 </div>
-                <div class="column right">
-                    <div class="text">I'm Tham and I'm <span class="typing-2"></span></div>
-                    <p>My name is Tham Seleruang. I graduated from Computer Engineering. Rajamangala University of Technology Thanyaburi I am interested in writing applications to bring knowledge to the project. or to create jobs in the future</p>
-                    <a href="https://drive.google.com/file/d/1vXzqMaH1bTd5NzEN9vUZ5QQdXr8KkVMt/view?usp=share_link">Download CV</a>
+                <div class="column right reveal">
+                    <div class="text">I'm Tham, a <span class="typing-2"></span></div>
+                    <p>I hold a B.Eng. in Computer Engineering (RMUTT) and a Master's in Data Engineering (KMUTNB). At Freewill FX I build production fleet systems — real-time GPS tracking, multi-camera video and driver-KPI platforms — spanning Flutter apps across Android, iOS and Android Box, Go services on MySQL and MongoDB, and even C firmware for RISC-V biometric devices. On the side I craft healthcare apps for physicians and nursing teams. I enjoy turning messy, real-world requirements into reliable, friendly software.</p>
+                    <div class="about-stats">
+                        <div class="stat"><span class="num">5+</span><span class="lbl">Years building</span></div>
+                        <div class="stat"><span class="num">11+</span><span class="lbl">Shipped apps</span></div>
+                        <div class="stat"><span class="num">2</span><span class="lbl">Companies</span></div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1vXzqMaH1bTd5NzEN9vUZ5QQdXr8KkVMt/view?usp=share_link" class="btn btn-primary">Download CV</a>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- services section start -->
-    <section class="services" id="services">
-        <div class="max-width">
-            <h2 class="title">My services</h2>
-            <div class="serv-content">
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-paint-brush"></i>
-                        <div class="text">Application Design</div>
-                        <p>Designing the User Interface of the Mobile Application to meet the needs and be as friendly as possible to users.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-chart-line"></i>
-                        <div class="text">Analyzing</div>
-                        <p>Analyze the system before writing a drawing for actual use that meets the needs. And fix the work of the user to work efficiently.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-code"></i>
-                        <div class="text">Apps Design</div>
-                        <p>Design and structure Mobile Application to meet the needs of each group of users. by engaging with the design team.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
         </div>
     </section>
 
-    <!-- skills section start -->
-    <section class="skills" id="skills">
+    <!-- education section start -->
+    <section class="education" id="education">
         <div class="max-width">
-            <h2 class="title">My skills</h2>
-            <div class="skills-content">
-                
-                <div class="column left">
-                    <h2>My Experiences</h2>
-                    <br>
-                    <h3 style="color: darkblue;" class="text">June 2023 - Present </h3>
-                        <h4 style="color: darkblue;">&#x2022; Freewill FX Co., Ltd.</h4>
-                        <h6 style="color: gray;padding-left: 10px;">Software Engineer, Bangkok</h6>
-                    <p style="padding-left: 30px;text-align:unset;">&#x2022; GPS Tracking Application. in tracking vehicles To show various events including speed, location, and accidents. Including displaying data on monitoring equipment of the tracking system.</p>
-                    <p>
-                    <p style="padding-left: 30px;text-align:unset;">&#x2022; Video Streaming Application. Watch video Download video To see various events that occur during the transportation Managing more than one camera angle It was a live performance.</p>
-                    <p>
-                    <p style="padding-left: 30px;text-align:unset;">&#x2022; The main work is Flutter Framework based on Platfrom android IOS and Android BOX to be developed into Store.</p>
-                    <p>
-                    <h3 style="color: darkblue;" class="text">May 2022 - March</h3>
-                        <h4 style="color: darkblue;">&#x2022; Vansales Application Co., Ltd.</h4>
-                        <h6 style="color: gray;padding-left: 10px;">Fullstack Developer, Nonthaburi</h6>
-                    <p style="padding-left: 30px;text-align:unset;">&#x2022; SIPH Easy Application, an application for
-                        healthcare professionals to keep track of
-                        treatment information including lab results,
-                        medications, symptoms, doctor's schedule,
-                        Notifications, Xray IPD and OPD with Atos.</p>
-                    <p>
-                    <p style="padding-left: 30px;text-align:unset;">&#x2022; Vansales Application and Vansales Web
-                        application Unit sales management system
-                        Vansales Apps helps in route planning, can be
-                        used via iOS and Android systems.</p>
-                    <p>
-                    <h3 style="color: darkblue;" class="text">Dec 2021 - Mar 2022</h3>
-                    <h4 style="color: darkblue;">&#x2022; FREELANCE.</h4>
-                    <h6 style="color: gray;padding-left: 10px;">Frontend Developer, Pathumthani</h6>
-                    <p style="padding-left: 30px;text-align:unset;">&#x2022; NodeJS Developers Web Application Medical
-                        Device Management System.</p>
-                    <p>
-                    <h3 style="color: darkblue;" class="text">Jun 2021 - Oct 2021</h3>
-                    <h4 style="color: darkblue;">&#x2022; BLUEWIND SOLUTION CO., LTD Frontend Developer (Internship)</h4>
-                    <h6 style="color: gray;padding-left: 10px;">Developer, Phatum thani</h6>
-                    <p style="padding-left: 30px;text-align:unset;">&#x2022; Cooperative work related to web application
-                        development, ERP system and system development
-                    design</p>
-                    <!-- <p>
-                    </p>
-                <a href="#">Read more</a> -->
+            <h2 class="title">Education</h2>
+            <div class="edu-grid">
+                <article class="edu-card reveal">
+                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <span class="edu-year">Master's · 2022</span>
+                    <h3>Data Engineering</h3>
+                    <span class="edu-school">King Mongkut's University of Technology North Bangkok (KMUTNB)</span>
+                    <p>Master's study in data engineering — data pipelines, storage and processing for analytics-driven systems.</p>
+                </article>
+                <article class="edu-card reveal">
+                    <div class="edu-icon"><i class="fas fa-laptop-code"></i></div>
+                    <span class="edu-year">Bachelor's · 2020</span>
+                    <h3>Computer Engineering</h3>
+                    <span class="edu-school">Rajamangala University of Technology Thanyaburi (RMUTT)</span>
+                    <p>Foundations in software, hardware and systems — where my interest in building real applications began.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- services section start -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">What I Do</h2>
+            <div class="serv-content">
+                <div class="card reveal">
+                    <div class="box">
+                        <i class="fas fa-mobile-screen-button"></i>
+                        <div class="text">Application Design</div>
+                        <p>Designing mobile UI/UX that meets real user needs and stays friendly, clean and fast across iOS and Android.</p>
+                    </div>
                 </div>
-                <div class="column right">
-                    <h2>My Tech Stack</h2>
-                    <br>
-                    <div>
-                        <h4 >&#x2022; Programming Language</h4>
-                        <img src="https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white" alt="Italian Trulli">
-                        <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="Italian Trulli">
-                        <img src="https://img.shields.io/badge/PHP-2800A4.svg?style=for-the-badge&logo=PHP&logoColor=white" alt="Italian Trulli">
-                        <img src="https://img.shields.io/badge/Node.js-%23323330.svg?style=for-the-badge&logo=Node.js&logoColor=white" alt="Italian Trulli">
-                        <img src="https://img.shields.io/badge/C++-AA97F0.svg?style=for-the-badge&logo=cplusplus&logoColor=0012A5" alt="Italian Trulli">
+                <div class="card reveal">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">System Analysis</div>
+                        <p>Analyzing systems before building — mapping requirements into solutions that actually work and scale efficiently.</p>
                     </div>
-                    <br>
-                    <div>
-                        <h4>&#x2022; Framework</h4>
-                        <img src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white" alt="Italian Trulli">
-                        <img src="https://img.shields.io/badge/CodeIgniter-FF5722.svg?style=for-the-badge&logo=CodeIgniter&logoColor=white" alt="Italian Trulli">
-                        <img src="https://img.shields.io/badge/React-0499CD.svg?style=for-the-badge&logo=React&logoColor=white" alt="Italian Trulli">
-                        <img src="https://img.shields.io/badge/Express-711E1E.svg?style=for-the-badge&logo=Express&logoColor=white" alt="Italian Trulli">
+                </div>
+                <div class="card reveal">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">App Development</div>
+                        <p>Building Flutter apps backed by Go &amp; Node.js APIs, working closely with design and product teams.</p>
                     </div>
-                    <br>
-                    <div>
-                        <h4> &#x2022; Database</h4>
-                        <img src="https://img.shields.io/badge/MySql-F0F0F0.svg?style=for-the-badge&logo=MySql&logoColor=blue" alt="Italian Trulli">
-                        <img src="https://img.shields.io/badge/MongoDB-007500.svg?style=for-the-badge&logo=MongoDB&logoColor=white" alt="Italian Trulli">
-                        <img src="https://img.shields.io/badge/Postgresql-207E82.svg?style=for-the-badge&logo=Postgresql&logoColor=white" alt="Italian Trulli">
+                </div>
+                <div class="card reveal">
+                    <div class="box">
+                        <i class="fas fa-server"></i>
+                        <div class="text">Backend Development</div>
+                        <p>Designing Go REST APIs backed by MySQL &amp; MongoDB — auth, event correlation and notification services, containerised with Docker and deployed to Kubernetes.</p>
                     </div>
-                    <br>
-                    <div>
-                        <h4>&#x2022; DevOps</h4>
-                        <img src="https://img.shields.io/badge/Docker-3C81BF.svg?style=for-the-badge&logo=Docker&logoColor=white" alt="Italian Trulli">
-                    </div>
-                    <br>
-                    <div>
-                        <h4>&#x2022; Tools</h4>
-                        <img src="https://img.shields.io/badge/dbeaver-00FF00.svg?style=for-the-badge&logo=dbeaver&logoColor=white" alt="Italian Trulli">
-                        <img src="https://img.shields.io/badge/VisualStudioCode-007ACC.svg?style=for-the-badge&logo=VisualStudioCode&logoColor=white" alt="Italian Trulli">
-                        <img src="https://img.shields.io/badge/Postman-FF6C37.svg?style=for-the-badge&logo=Postman&logoColor=white" alt="Italian Trulli">
-                        <img src="https://img.shields.io/badge/Slack-4A154B.svg?style=for-the-badge&logo=Slack&logoColor=white" alt="Italian Trulli">
-                        <img src="https://img.shields.io/badge/Zoom-2D8CFF.svg?style=for-the-badge&logo=Zoom&logoColor=white" alt="Italian Trulli">
-                        <img src="https://img.shields.io/badge/Figma-00991A.svg?style=for-the-badge&logo=Figma&logoColor=white" alt="Italian Trulli">
-                        <img src="https://img.shields.io/badge/Git-B9F102.svg?style=for-the-badge&logo=Git&logoColor=ffffff" alt="Italian Trulli">
-                        <img src="https://img.shields.io/badge/Github-181717.svg?style=for-the-badge&logo=Github&logoColor=" alt="Italian Trulli">
-                        <img src="https://img.shields.io/badge/GitLab-0071F0.svg?style=for-the-badge&logo=GitLab&logoColor=" alt="Italian Trulli">
-                        <img src="https://img.shields.io/badge/Android Studio-00FF70.svg?style=for-the-badge&logo=Android Studio&logoColor=white" alt="Italian Trulli">
-                        <img src="https://img.shields.io/badge/Xcode-00AFFF.svg?style=for-the-badge&logo=Xcode&logoColor=white" alt="Italian Trulli">
-                        <img src="https://img.shields.io/badge/Arduino-00FFFF.svg?style=for-the-badge&logo=Arduino&logoColor=Black" alt="Italian Trulli">
-                    </div>
-                    <br><br>
                 </div>
             </div>
         </div>
     </section>
-    <!-- teams section start -->
+
+    <!-- experience section start -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">Experience</h2>
+            <div class="skills-content">
+                <div class="column left reveal">
+                    <h2>Career Timeline</h2>
+                    <div class="timeline">
+                        <div class="tl-item">
+                            <span class="tl-date">2025 – Present</span>
+                            <h4>Freelance · Healthcare</h4>
+                            <span class="tl-role">Mobile Developer · Remote</span>
+                            <ul>
+                                <li>Physician apps for Chulabhorn Hospital, Siriraj Salaya and Thammasat University Hospital — patient records, lab trends, e-prescriptions and medical-imaging review.</li>
+                                <li>Nursing Progress — bed management, nurse notes, duty rosters and PDF printing across mobile, web and desktop (Firestore + MongoDB).</li>
+                                <li>Nurse Duty Calendar — two-dimensional roster grid, shift-off requests, approval flow and real-time schedule sync.</li>
+                            </ul>
+                        </div>
+                        <div class="tl-item">
+                            <span class="tl-date">Jun 2023 – Present</span>
+                            <h4>Freewill FX Co., Ltd.</h4>
+                            <span class="tl-role">Software Engineer · Bangkok</span>
+                            <ul>
+                                <li>Built TERMINUS, the fleet-monitoring app — real-time GPS tracking with map clustering, route replay and a four-mode video system (live RTMP, DVR playback, SD-card download, multi-camera monitor).</li>
+                                <li>Driver KPI app + Go backend — KPI scoring, web-aligned trip cutting, BLE breathalyzer sync and an event appeal/declaration flow.</li>
+                                <li>Event Dashboard API in Go — event queries and notification topics, containerised with Docker and deployed to DigitalOcean Kubernetes.</li>
+                                <li>CTAD-100 biometric time &amp; attendance — Android app (Java, face + fingerprint) and RISC-V firmware (C) syncing over REST and WebSocket.</li>
+                                <li>Core Flutter work across Android, iOS and Android Box, shipped to the stores.</li>
+                            </ul>
+                        </div>
+                        <div class="tl-item">
+                            <span class="tl-date">May 2022 – Mar 2023</span>
+                            <h4>Vansales Application Co., Ltd.</h4>
+                            <span class="tl-role">Fullstack Developer · Nonthaburi</span>
+                            <ul>
+                                <li>SiPH Easy — physician app for Siriraj Piyamaharajkarun Hospital: patient lists (IPD / OPD / Plan OR), lab results, medications, vital-sign charts, X-ray viewer and phone orders (with Atos).</li>
+                                <li>Vansales app &amp; web — unit-sales management and route planning on iOS and Android.</li>
+                            </ul>
+                        </div>
+                        <div class="tl-item">
+                            <span class="tl-date">Dec 2021 – Mar 2022</span>
+                            <h4>Freelance</h4>
+                            <span class="tl-role">Frontend Developer · Pathum Thani</span>
+                            <ul>
+                                <li>Node.js web application for a medical device management system.</li>
+                            </ul>
+                        </div>
+                        <div class="tl-item">
+                            <span class="tl-date">Jun 2021 – Oct 2021</span>
+                            <h4>Bluewind Solution Co., Ltd.</h4>
+                            <span class="tl-role">Frontend Developer (Internship) · Pathum Thani</span>
+                            <ul>
+                                <li>Web application development and ERP system design.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right reveal">
+                    <h2>My Tech Stack</h2>
+                    <div class="stack-group">
+                        <h4>Programming Language</h4>
+                        <div class="badges">
+                            <img src="https://img.shields.io/badge/Dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white" alt="Dart" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/Go-00ADD8.svg?style=for-the-badge&logo=Go&logoColor=white" alt="Go" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/TypeScript-3178C6.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/PHP-2800A4.svg?style=for-the-badge&logo=PHP&logoColor=white" alt="PHP" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/Node.js-%23323330.svg?style=for-the-badge&logo=Node.js&logoColor=%2368A063" alt="Node.js" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/C++-AA97F0.svg?style=for-the-badge&logo=cplusplus&logoColor=0012A5" alt="C++" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/Java-ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/Kotlin-7F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="stack-group">
+                        <h4>Framework &amp; Library</h4>
+                        <div class="badges">
+                            <img src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white" alt="Flutter" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/GetX-8A2BE2.svg?style=for-the-badge&logo=flutter&logoColor=white" alt="GetX" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/React-20232A.svg?style=for-the-badge&logo=React&logoColor=%2361DAFB" alt="React" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/Next.js-000000.svg?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/Express-000000.svg?style=for-the-badge&logo=express&logoColor=white" alt="Express" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/Spring_Boot-6DB33F.svg?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/CodeIgniter-EF4223.svg?style=for-the-badge&logo=codeigniter&logoColor=white" alt="CodeIgniter" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="stack-group">
+                        <h4>Database</h4>
+                        <div class="badges">
+                            <img src="https://img.shields.io/badge/MySQL-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/MongoDB-47A248.svg?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/PostgreSQL-4169E1.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/Firebase-FFCA28.svg?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/Cloud_Firestore-039BE5.svg?style=for-the-badge&logo=firebase&logoColor=white" alt="Cloud Firestore" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="stack-group">
+                        <h4>DevOps &amp; Infra</h4>
+                        <div class="badges">
+                            <img src="https://img.shields.io/badge/Docker-2496ED.svg?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/Kubernetes-326CE5.svg?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/MQTT-660066.svg?style=for-the-badge&logo=mqtt&logoColor=white" alt="MQTT" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/RabbitMQ-FF6600.svg?style=for-the-badge&logo=rabbitmq&logoColor=white" alt="RabbitMQ" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="stack-group">
+                        <h4>AI / ML</h4>
+                        <div class="badges">
+                            <img src="https://img.shields.io/badge/Claude-D97757.svg?style=for-the-badge&logo=claude&logoColor=white" alt="Claude" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/TensorFlow_Lite-FF6F00.svg?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow Lite" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/Google_ML_Kit-4285F4.svg?style=for-the-badge&logo=google&logoColor=white" alt="Google ML Kit" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/GitHub_Copilot-1F2328.svg?style=for-the-badge&logo=githubcopilot&logoColor=white" alt="GitHub Copilot" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/Codex-412991.svg?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI Codex" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/Obsidian-7C3AED.svg?style=for-the-badge&logo=obsidian&logoColor=white" alt="Obsidian" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/Ollama-000000.svg?style=for-the-badge&logo=ollama&logoColor=white" alt="Ollama" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/NotebookLM-1A73E8.svg?style=for-the-badge&logo=google&logoColor=white" alt="Google NotebookLM" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="stack-group">
+                        <h4>Tools</h4>
+                        <div class="badges">
+                            <img src="https://img.shields.io/badge/VS_Code-007ACC.svg?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/Android_Studio-3DDC84.svg?style=for-the-badge&logo=androidstudio&logoColor=white" alt="Android Studio" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/Xcode-147EFB.svg?style=for-the-badge&logo=xcode&logoColor=white" alt="Xcode" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/Postman-FF6C37.svg?style=for-the-badge&logo=postman&logoColor=white" alt="Postman" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/DBeaver-382923.svg?style=for-the-badge&logo=dbeaver&logoColor=white" alt="DBeaver" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/Figma-F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" alt="Figma" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/Git-F05032.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" loading="lazy" decoding="async">
+                            <img src="https://img.shields.io/badge/GitLab-FC6D26.svg?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects section start -->
+    <section class="projects" id="projects">
+        <div class="max-width">
+            <h2 class="title">Projects</h2>
+            <p class="section-lead">Selected products I've designed and built — most are live in production today.</p>
+            <div class="proj-grid">
+                <article class="proj-card reveal">
+                    <div class="proj-logo"><img src="images/terminus.png" alt="TERMINUS logo" width="64" height="64" loading="lazy" decoding="async"></div>
+                    <h3>TERMINUS Fleet Management</h3>
+                    <p>Fleet-manager app for real-time vehicle tracking on Google Maps with marker clustering and route replay. Offline-cached push notifications (Isar) and a four-mode video system — live RTMP stream, DVR playback, SD-card download and multi-camera monitor. PIN + biometric lock; GPS certified by the Department of Land Transport.</p>
+                    <div class="proj-tags"><span>Flutter</span><span>GetX</span><span>Dio</span><span>Isar</span><span>WebSocket</span><span>Google Maps</span><span>Firebase</span></div>
+                    <span class="proj-meta">Freewill FX · iOS / Android / Android Box</span>
+                </article>
+                <article class="proj-card reveal">
+                    <div class="proj-logo"><img src="images/pcg.png" alt="True Delivery Tracker logo" width="64" height="64" loading="lazy" decoding="async"></div>
+                    <h3>True Delivery Tracker</h3>
+                    <p>Delivery tracking for True Business — view live courier positions and the status of each shipping worksheet across the delivery operation.</p>
+                    <div class="proj-tags"><span>Flutter</span><span>Realtime GPS</span><span>REST API</span></div>
+                    <span class="proj-meta">Freewill FX · iOS / Android</span>
+                </article>
+                <article class="proj-card reveal">
+                    <div class="proj-logo"><img src="images/profile-8.png" alt="SiPH Easy logo" width="64" height="64" loading="lazy" decoding="async"></div>
+                    <h3>SiPH Easy — Physician App</h3>
+                    <p>Clinical companion for physicians at Siriraj Piyamaharajkarun Hospital — patient lists across IPD, OPD, Plan Admit and Plan OR, with lab results, medication profiles, vital-sign charts, an X-ray image viewer, phone orders and critical-lab confirmations. Secured by AD login, SMS OTP, PIN and biometrics. Delivered with Atos.</p>
+                    <div class="proj-tags"><span>Flutter</span><span>Healthcare</span><span>Biometrics</span><span>Notifications</span></div>
+                    <span class="proj-meta">Vansales App · iOS / Android</span>
+                </article>
+                <article class="proj-card reveal">
+                    <div class="proj-logo"><img src="images/profile-7.png" alt="Vansales logo" width="64" height="64" loading="lazy" decoding="async"></div>
+                    <h3>Vansales Application</h3>
+                    <p>Unit sales management system. Vansales helps field teams with route planning and on-the-road order capture, available on both iOS and Android.</p>
+                    <div class="proj-tags"><span>Flutter</span><span>Fullstack</span><span>Route Planning</span></div>
+                    <span class="proj-meta">Vansales App · iOS / Android</span>
+                </article>
+                <article class="proj-card reveal">
+                    <div class="proj-logo icon-logo"><i class="fas fa-truck-fast"></i></div>
+                    <h3>Driver KPI App</h3>
+                    <p>Driver performance &amp; compliance app — daily KPI scores, trip history, policy-violation events, a BLE breathalyzer (alcohol) sync and an in-app appeal/declaration flow. Backed by a Go service correlating GPS, events and stops; auth via Firebase OTP + PIN + JWT.</p>
+                    <div class="proj-tags"><span>Flutter</span><span>Go</span><span>GetX</span><span>MySQL</span><span>MongoDB</span><span>BLE</span></div>
+                    <span class="proj-meta">Freewill FX · Mobile + Backend</span>
+                </article>
+                <article class="proj-card reveal">
+                    <div class="proj-logo icon-logo"><i class="fas fa-server"></i></div>
+                    <h3>Event Dashboard API</h3>
+                    <p>Go REST API (Gorilla Mux) that queries and correlates vehicle events — powering notification topics and video-event matching across the fleet platform. MySQL master data + MongoDB events, shipped via Docker to DigitalOcean Kubernetes.</p>
+                    <div class="proj-tags"><span>Go</span><span>MySQL</span><span>MongoDB</span><span>Docker</span><span>Kubernetes</span></div>
+                    <span class="proj-meta">Freewill FX · Backend</span>
+                </article>
+                <article class="proj-card reveal">
+                    <div class="proj-logo icon-logo"><i class="fas fa-user-doctor"></i></div>
+                    <h3>Hospital Physician Apps</h3>
+                    <p>Freelance clinical apps for doctors at Chulabhorn Hospital, Siriraj Salaya and Thammasat University Hospital — ward rounds, patient records, lab trends, e-prescriptions, vital-sign monitoring and medical-imaging review, with real-time critical alerts.</p>
+                    <div class="proj-tags"><span>Flutter</span><span>Healthcare</span><span>REST API</span><span>Notifications</span></div>
+                    <span class="proj-meta">Freelance · iOS / Android</span>
+                </article>
+                <article class="proj-card reveal">
+                    <div class="proj-logo icon-logo"><i class="fas fa-notes-medical"></i></div>
+                    <h3>Nursing Progress</h3>
+                    <p>Hospital app for nurses — bed management, nurse notes with edit-conflict handling, patient admission, duty rosters, ward feedback and PDF printing of notes and focus lists. Multi-platform Flutter (mobile, web, desktop) on Firebase Firestore, Realtime Database and MongoDB.</p>
+                    <div class="proj-tags"><span>Flutter</span><span>GetX</span><span>Firestore</span><span>MongoDB</span><span>PDF</span></div>
+                    <span class="proj-meta">Freelance · Android / iOS / Web / Desktop</span>
+                </article>
+                <article class="proj-card reveal">
+                    <div class="proj-logo icon-logo"><i class="fas fa-calendar-check"></i></div>
+                    <h3>Nurse Duty Calendar</h3>
+                    <p>Nurse duty-scheduling app — a two-dimensional roster grid with frozen headers, shift-off requests, an admin approval flow and real-time schedule sync. Built with Flutter, GetX and Firestore, redesigned around a clean medical UI.</p>
+                    <div class="proj-tags"><span>Flutter</span><span>GetX</span><span>Firestore</span><span>Realtime Sync</span></div>
+                    <span class="proj-meta">Freelance · Android / iOS</span>
+                </article>
+                <article class="proj-card reveal">
+                    <div class="proj-logo icon-logo"><i class="fas fa-fingerprint"></i></div>
+                    <h3>CTAD-100 Attendance</h3>
+                    <p>Android biometric time-&amp;-attendance app — face recognition (HLK-AI-10 + ML Kit + TensorFlow Lite) and fingerprint (Suprema), with UVC camera, serial I/O and cloud sync over REST and WebSocket. Written in Java on SQLite.</p>
+                    <div class="proj-tags"><span>Android</span><span>Java</span><span>ML Kit</span><span>TensorFlow Lite</span><span>CameraX</span><span>WebSocket</span></div>
+                    <span class="proj-meta">Freewill FX · Android Device</span>
+                </article>
+                <article class="proj-card reveal">
+                    <div class="proj-logo icon-logo"><i class="fas fa-microchip"></i></div>
+                    <h3>CTAD-100 Firmware (CTFR)</h3>
+                    <p>Embedded firmware in C for the CTAD-100 device on RISC-V 64-bit (SG2002/CV181X). Drives face and fingerprint sensors over serial protocols, persists to SQLite and syncs with the cloud through REST and WebSocket commands.</p>
+                    <div class="proj-tags"><span>C</span><span>RISC-V</span><span>Embedded</span><span>SQLite</span><span>WebSocket</span></div>
+                    <span class="proj-meta">Freewill FX · Firmware</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- activity section start -->
     <section class="teams" id="teams">
         <div class="max-width">
             <h2 class="title">Activity</h2>
             <div class="carousel owl-carousel">
                 <div class="card">
                     <div class="box">
-                        <img src="images/profile-3.jpeg" alt="">
+                        <img src="images/profile-3.jpeg" alt="College graduation ceremony" width="130" height="130" loading="lazy" decoding="async">
                         <div class="text">College Graduation</div>
-                        <div class="text"></div>
                         <p>College graduation ceremony to congratulate seniors who have graduated.</p>
-                        <br><br>
                     </div>
                 </div>
-                <a href="https://github.com/tham9500" style="color: white;">
+                <a href="https://github.com/tham9500" target="_blank" class="card-link">
                     <div class="card">
                         <div class="box">
-                            <img src="images/profile-4.jpeg" alt="">
-                            <div class="text">Github</div>
-                            <div class="text"></div>
-                            <p>You can follow the work at Github.com</p>
-                            <br><br><br>
+                            <img src="images/profile-4.jpeg" alt="GitHub profile" width="130" height="130" loading="lazy" decoding="async">
+                            <div class="text">GitHub</div>
+                            <p>Follow my work and open-source experiments on GitHub.com</p>
                         </div>
                     </div>
                 </a>
-                
                 <div class="card">
                     <div class="box">
-                        <img src="images/profile-5.jpeg" alt="">
-                        <div class="text">Flutter Dart</div>
-                        <div class="text"></div>
-                        <p>Mobile application with Flutter.</p>
-                        <br><br><br><br>
+                        <img src="images/profile-5.jpeg" alt="Flutter and Dart development" width="130" height="130" loading="lazy" decoding="async">
+                        <div class="text">Flutter &amp; Dart</div>
+                        <p>Building cross-platform mobile applications with Flutter.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="images/profile-7.png" alt="">
-                        <div class="text">Vansales Application Co., Ltd.</div>
-                        <p>Unit sales management system Vansales Apps helps in route planning, can be used via iOS and Android systems.</p>
+                        <img src="images/freewillfx.jpeg" alt="Freewill FX company logo" width="130" height="130" loading="lazy" decoding="async">
+                        <div class="text">Freewill FX Co., Ltd.</div>
+                        <p>Freewill FX helps people live better and businesses work smarter using mobile and wireless technologies.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="images/profile-8.png" alt="">
-                        <div class="text">Sirirajpiyamaharajkarun Hospital</div>
-                        <p>An application for medical personnel to track treatment information, including lab results, drugs, symptoms, IPD and OPD.</p>
+                        <div class="icon-circle"><img src="https://cdn.simpleicons.org/bitbucket/white" alt="Bitbucket" width="60" height="60" loading="lazy" decoding="async"></div>
+                        <div class="text">Bitbucket</div>
+                        <p>Version control and CI/CD — building and shipping backend services through Bitbucket Pipelines.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="images/freewillfx.jpeg" alt="">
-                        <div class="text">Freewill FX Co.,LTD</div>
-                        <div class="text"></div>
-                        <p>Freewill FX’s mission is to help people have better lives and to help businesses
-to become more effective by using mobile and wireless technologies.</p>
+                        <div class="icon-circle"><img src="https://cdn.simpleicons.org/firebase/white" alt="Firebase" width="60" height="60" loading="lazy" decoding="async"></div>
+                        <div class="text">Firebase</div>
+                        <p>Cloud Messaging, Analytics and Firestore powering push notifications and realtime data across mobile apps.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="images/terminus.png" alt="">
-                        <div class="text">TERMINUS Application</div>
-                        <div class="text"></div>
-                        <p>TERMINUS fleet management system Track your own fleet's status. GPS TRACKING that has received standard certification from the Department of Land Transport.</p>
+                        <div class="icon-circle"><img src="https://cdn.simpleicons.org/go/white" alt="Go" width="60" height="60" loading="lazy" decoding="async"></div>
+                        <div class="text">Go</div>
+                        <p>Backend services and REST APIs in Go — concurrent, fast and container-friendly.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="images/pcg.png" alt="">
-                        <div class="text">True Delivery Tracking</div>
-                        <div class="text"></div>
-                        <p>Used for viewing the position of delivery personnel. and view the status of the shipping worksheet</p>
+                        <div class="icon-circle"><img src="https://cdn.simpleicons.org/mysql/white" alt="MySQL" width="60" height="60" loading="lazy" decoding="async"></div>
+                        <div class="text">MySQL</div>
+                        <p>Relational data modelling and tuning behind fleet, KPI and healthcare systems.</p>
                     </div>
                 </div>
-                
+                <div class="card">
+                    <div class="box">
+                        <div class="icon-circle"><img src="https://cdn.simpleicons.org/php/white" alt="PHP" width="60" height="60" loading="lazy" decoding="async"></div>
+                        <div class="text">PHP</div>
+                        <p>Web applications and APIs with PHP and CodeIgniter.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="icon-circle"><img src="https://cdn.simpleicons.org/cisco/white" alt="Cisco" width="60" height="60" loading="lazy" decoding="async"></div>
+                        <div class="text">Cisco</div>
+                        <p>Networking fundamentals — routing, switching and device configuration.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- contact section start -->
+
     <!-- footer section start -->
-    <script src="script.js"></script>
+    <footer>
+        <div class="footer-social">
+            <a href="https://github.com/tham9500" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:tham.sal@freewillfx.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <span>Designed &amp; built by <a href="#home">Tham Saleerueng</a> · &copy; 2026</span>
+    </footer>
 </body>
 </html>

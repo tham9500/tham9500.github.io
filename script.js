@@ -18,13 +18,14 @@ $(document).ready(function () {
   // slide-up script
   $(".scroll-up-btn").click(function () {
     $("html").animate({ scrollTop: 0 });
-    // removing smooth scroll on slide-up button click
     $("html").css("scrollBehavior", "auto");
   });
 
   $(".navbar .menu li a").click(function () {
-    // applying again smooth scroll on menu items click
     $("html").css("scrollBehavior", "smooth");
+    // close mobile menu after navigating
+    $(".navbar .menu").removeClass("active");
+    $(".menu-btn i").removeClass("active");
   });
 
   // toggle menu/navbar script
@@ -34,54 +35,67 @@ $(document).ready(function () {
   });
 
   // typing text animation script
-  var typed = new Typed(".typing", {
-    strings: [
-      "Software Engineer",
-      "Computer Engineer",
-      "Flutter Developer",
-      "System Analysis",
-      "Craduated RMUTT",
-    ],
-    typeSpeed: 100,
-    backSpeed: 60,
+  var roles = [
+    "Software Engineer",
+    "Flutter Developer",
+    "Computer Engineer",
+    "System Analyst",
+    "Backend Developer",
+  ];
+  new Typed(".typing", {
+    strings: roles,
+    typeSpeed: 90,
+    backSpeed: 55,
     loop: true,
   });
-
-  
-
-  var typed = new Typed(".typing-2", {
-    strings: [
-      "Software Engineer",
-      "Computer Engineer",
-      "Flutter Developer",
-      "System Analysis",
-      "Craduated RMUTT",
-    ],
-    typeSpeed: 100,
-    backSpeed: 60,
+  new Typed(".typing-2", {
+    strings: roles,
+    typeSpeed: 90,
+    backSpeed: 55,
     loop: true,
   });
 
   // owl carousel script
   $(".carousel").owlCarousel({
-    margin: 20,
+    margin: 24,
     loop: true,
     autoplay: true,
-    autoplayTimeOut: 2000,
+    autoplayTimeout: 2500,
     autoplayHoverPause: true,
     responsive: {
-      0: {
-        items: 1,
-        nav: false,
-      },
-      600: {
-        items: 2,
-        nav: false,
-      },
-      1000: {
-        items: 3,
-        nav: false,
-      },
+      0: { items: 1, nav: false },
+      600: { items: 2, nav: false },
+      1000: { items: 3, nav: false },
     },
+  });
+});
+
+// scroll reveal via IntersectionObserver
+document.addEventListener("DOMContentLoaded", function () {
+  var els = document.querySelectorAll(".reveal");
+  if (!("IntersectionObserver" in window)) {
+    els.forEach(function (el) {
+      el.classList.add("show");
+    });
+    return;
+  }
+  var io = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (entry, i) {
+        if (entry.isIntersecting) {
+          var el = entry.target;
+          // small stagger for grouped cards
+          var delay = (Array.prototype.indexOf.call(els, el) % 3) * 90;
+          setTimeout(function () {
+            el.classList.add("show");
+          }, delay);
+          io.unobserve(el);
+        }
+      });
+    },
+    { threshold: 0.12 }
+  );
+  els.forEach(function (el) {
+    io.observe(el);
   });
 });
