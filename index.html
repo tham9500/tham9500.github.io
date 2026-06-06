@@ -73,7 +73,8 @@
                     <a href="https://drive.google.com/file/d/1vXzqMaH1bTd5NzEN9vUZ5QQdXr8KkVMt/view?usp=share_link" class="btn btn-ghost">Download CV</a>
                 </div>
                 <div class="hero-social">
-                    <a href="https://github.com/tham9500" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/tham9500" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/tham-saleerueng-47b96b239/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     <a href="mailto:tham.sal@freewillfx.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
@@ -98,6 +99,7 @@
                         <div class="stat"><span class="num">5+</span><span class="lbl">Years building</span></div>
                         <div class="stat"><span class="num">11+</span><span class="lbl">Shipped apps</span></div>
                         <div class="stat"><span class="num">2</span><span class="lbl">Companies</span></div>
+                        <div class="stat"><span class="num">5</span><span class="lbl">Domains</span></div>
                     </div>
                     <a href="https://drive.google.com/file/d/1vXzqMaH1bTd5NzEN9vUZ5QQdXr8KkVMt/view?usp=share_link" class="btn btn-primary">Download CV</a>
                 </div>
@@ -314,7 +316,7 @@
                     <div class="proj-tags"><span>Flutter</span><span>GetX</span><span>Dio</span><span>Isar</span><span>WebSocket</span><span>Google Maps</span><span>Firebase</span></div>
                     <span class="proj-meta">Freewill FX · iOS / Android / Android Box</span>
                 </article>
-                <article class="proj-card reveal">
+                <article class="proj-card proj-hidden">
                     <div class="proj-logo"><img src="images/pcg.png" alt="True Delivery Tracker logo" width="64" height="64" loading="lazy" decoding="async"></div>
                     <h3>True Delivery Tracker</h3>
                     <p>Delivery tracking for True Business — view live courier positions and the status of each shipping worksheet across the delivery operation.</p>
@@ -328,7 +330,7 @@
                     <div class="proj-tags"><span>Flutter</span><span>Healthcare</span><span>Biometrics</span><span>Notifications</span></div>
                     <span class="proj-meta">Vansales App · iOS / Android</span>
                 </article>
-                <article class="proj-card reveal">
+                <article class="proj-card proj-hidden">
                     <div class="proj-logo"><img src="images/profile-7.png" alt="Vansales logo" width="64" height="64" loading="lazy" decoding="async"></div>
                     <h3>Vansales Application</h3>
                     <p>Unit sales management system. Vansales helps field teams with route planning and on-the-road order capture, available on both iOS and Android.</p>
@@ -349,14 +351,14 @@
                     <div class="proj-tags"><span>Go</span><span>MySQL</span><span>MongoDB</span><span>Docker</span><span>Kubernetes</span></div>
                     <span class="proj-meta">Freewill FX · Backend</span>
                 </article>
-                <article class="proj-card reveal">
+                <article class="proj-card proj-hidden">
                     <div class="proj-logo icon-logo"><i class="fas fa-user-doctor"></i></div>
                     <h3>Hospital Physician Apps</h3>
                     <p>Freelance clinical apps for doctors at Chulabhorn Hospital, Siriraj Salaya and Thammasat University Hospital — ward rounds, patient records, lab trends, e-prescriptions, vital-sign monitoring and medical-imaging review, with real-time critical alerts.</p>
                     <div class="proj-tags"><span>Flutter</span><span>Healthcare</span><span>REST API</span><span>Notifications</span></div>
                     <span class="proj-meta">Freelance · iOS / Android</span>
                 </article>
-                <article class="proj-card reveal">
+                <article class="proj-card proj-hidden">
                     <div class="proj-logo icon-logo"><i class="fas fa-notes-medical"></i></div>
                     <h3>Nursing Progress</h3>
                     <p>Hospital app for nurses — bed management, nurse notes with edit-conflict handling, patient admission, duty rosters, ward feedback and PDF printing of notes and focus lists. Multi-platform Flutter (mobile, web, desktop) on Firebase Firestore, Realtime Database and MongoDB.</p>
@@ -377,13 +379,16 @@
                     <div class="proj-tags"><span>Android</span><span>Java</span><span>ML Kit</span><span>TensorFlow Lite</span><span>CameraX</span><span>WebSocket</span></div>
                     <span class="proj-meta">Freewill FX · Android Device</span>
                 </article>
-                <article class="proj-card reveal">
+                <article class="proj-card proj-hidden">
                     <div class="proj-logo icon-logo"><i class="fas fa-microchip"></i></div>
                     <h3>CTAD-100 Firmware (CTFR)</h3>
                     <p>Embedded firmware in C for the CTAD-100 device on RISC-V 64-bit (SG2002/CV181X). Drives face and fingerprint sensors over serial protocols, persists to SQLite and syncs with the cloud through REST and WebSocket commands.</p>
                     <div class="proj-tags"><span>C</span><span>RISC-V</span><span>Embedded</span><span>SQLite</span><span>WebSocket</span></div>
                     <span class="proj-meta">Freewill FX · Firmware</span>
                 </article>
+            </div>
+            <div class="proj-more-wrap">
+                <button class="btn btn-ghost proj-toggle" type="button" aria-expanded="false">Show all projects (+5)</button>
             </div>
         </div>
     </section>
@@ -439,27 +444,6 @@
                 </div>
                 <div class="card">
                     <div class="box">
-                        <div class="icon-circle"><img src="https://cdn.simpleicons.org/go/white" alt="Go" width="60" height="60" loading="lazy" decoding="async"></div>
-                        <div class="text">Go</div>
-                        <p>Backend services and REST APIs in Go — concurrent, fast and container-friendly.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <div class="icon-circle"><img src="https://cdn.simpleicons.org/mysql/white" alt="MySQL" width="60" height="60" loading="lazy" decoding="async"></div>
-                        <div class="text">MySQL</div>
-                        <p>Relational data modelling and tuning behind fleet, KPI and healthcare systems.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <div class="icon-circle"><img src="https://cdn.simpleicons.org/php/white" alt="PHP" width="60" height="60" loading="lazy" decoding="async"></div>
-                        <div class="text">PHP</div>
-                        <p>Web applications and APIs with PHP and CodeIgniter.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
                         <div class="icon-circle"><img src="https://cdn.simpleicons.org/cisco/white" alt="Cisco" width="60" height="60" loading="lazy" decoding="async"></div>
                         <div class="text">Cisco</div>
                         <p>Networking fundamentals — routing, switching and device configuration.</p>
@@ -472,7 +456,8 @@
     <!-- footer section start -->
     <footer>
         <div class="footer-social">
-            <a href="https://github.com/tham9500" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/tham9500" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/tham-saleerueng-47b96b239/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
             <a href="mailto:tham.sal@freewillfx.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
         <span>Designed &amp; built by <a href="#home">Tham Saleerueng</a> · &copy; 2026</span>

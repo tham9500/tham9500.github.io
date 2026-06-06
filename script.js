@@ -98,4 +98,15 @@ document.addEventListener("DOMContentLoaded", function () {
   els.forEach(function (el) {
     io.observe(el);
   });
+
+  // projects "show more" toggle
+  var projToggle = document.querySelector(".proj-toggle");
+  if (projToggle) {
+    var grid = document.querySelector(".proj-grid");
+    projToggle.addEventListener("click", function () {
+      var expanded = grid.classList.toggle("expanded");
+      projToggle.setAttribute("aria-expanded", expanded ? "true" : "false");
+      projToggle.textContent = expanded ? "Show less" : "Show all projects (+5)";
+    });
+  }
 });

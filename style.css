@@ -789,6 +789,19 @@ section .title::before {
   border-top: 1px solid var(--border);
   padding-top: 14px;
 }
+.proj-hidden {
+  display: none;
+}
+.proj-grid.expanded .proj-hidden {
+  display: block;
+}
+.proj-more-wrap {
+  text-align: center;
+  margin-top: 38px;
+}
+.proj-toggle {
+  font-family: inherit;
+}
 
 /* activity / teams section styling */
 .teams {
